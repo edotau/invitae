@@ -25,6 +25,20 @@ else
 	echo "Error: Error: apologies, I only support MacOS and Linux operation systems for the time being..."
 fi
 
+# Perform sequence adapter trimming
+bbduk=../bin/bbmap/bbduk.sh
+TRIM1=${PREFIX}.bbduk_trim_R1.fastq.gz
+TRIM2=${PREFIX}.bbduk_trim_R2.fastq.gz
+
+$bbduk -Xmx4g in1=$READ1 in2=$READ2 out1=$TRIM1 out2=$TRIM2 minlen=25 qtrim=rl trimq=10 ktrim=r k=25 mink=11 hdist=1 ref=../bin/bbmap/resources/adapters.fa
+
+export PATH=/usr/local/bin:$PATH
+DIR=trim_galore_${PREFIX}
+INPUT1=${DIR}/${PREFIX}_val_1.fq.gz
+INPUT2=${DIR}/${PREFIX}_val_2.fq.gz
+
+trim_galore -o $DIR --basename $PREFIX --trim-n --max_n 0 --cores 4 --paired $TRIM1 $TRIM2
+
 # Assemble initial contigs with SPAdes 3.14.1
 export PATH=/Users/eric.au/bin/SPAdes-3.14.1-Darwin/bin:$PATH
 # Paper:	https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3342519/pdf/cmb.2012.0021.pdf
@@ -32,8 +46,8 @@ export PATH=/Users/eric.au/bin/SPAdes-3.14.1-Darwin/bin:$PATH
 # Manual	https://cab.spbu.ru/software/spades
 
 echo "
-spades.py --only-assembler -o ${PREFIX}_covid_spades -t $CORES --rna -1 $READ1 -2 $READ2"
-spades.py --only-assembler -o ${PREFIX}_covid_spades -t $CORES --rna -1 $READ1 -2 $READ2
+spades.py --only-assembler -o ${PREFIX}_covid_spades -t $CORES --rna -1 $INPUT1 -2 $INPUT2"
+spades.py --only-assembler -o ${PREFIX}_covid_spades -t $CORES --rna -1 $INPUT1 -2 $INPUT2
 
 DRAFT_FASTA=${PREFIX}_covid_spades/transcripts.fasta
 
