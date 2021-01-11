@@ -1,5 +1,5 @@
 #!/bin/sh
-
+set -e
 # Wrapper script for Nextstrain SARS-CoV-2 tutorial
 
 # Performs check to install miniconda on computer if conda does not exist in path
@@ -10,7 +10,7 @@ if ! command -v conda &> /dev/null; then
 	elif [[ "$OSTYPE" == "darwin"* ]]; then
 		curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh --output miniconda_install_MACOS.sh; bash ./miniconda_install_MACOS.sh
 	else
-		echo "Error: apologies, I currently only support MacOS and Linux operation systems..."
+		echo "Error: Error: apologies, I only support MacOS and Linux operation systems for the time being..."
 		exit
 	fi
 fi
@@ -41,13 +41,14 @@ else
 	npm install --global auspice"
 	npm install --global auspice
 fi
+
 # Determines number of cores your machine has
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-	set CORES=$SLURM_CPUS_ON_NODE
+	export CORES=$SLURM_CPUS_ON_NODE
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-	set CORES=$(sysctl -n hw.ncpu)
+	export CORES=$(sysctl -n hw.ncpu)
 else
-
+	echo "Error: Error: apologies, I only support MacOS and Linux operation systems for the time being..."
 fi
 
 # Run a basic analysis with example data
@@ -68,9 +69,10 @@ if ! [ -d "ncov" ]; then # check if the directory is there
 	echo "
 	snakemake --cores $CORES --profile ./my_profiles/getting_started"
 	snakemake --cores $CORES --profile ./my_profiles/getting_started
+else
+	cd ncov
 fi
 
-cd ncov
 echo "
 auspice view & open http://localhost:4000"
 auspice view & sleep 5s; open "http://localhost:4000"
