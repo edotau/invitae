@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 REF=wuhCor1/wuhCor1.fa
 
 READ1=$1
@@ -15,7 +16,7 @@ fi
 
 PREFIX=$(basename $READ1  | rev | cut -d '.' -f 3- | rev | cut -d '_' -f 1)
 
-# Determines number of cores your machine has
+# Determines number of cores your machine
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 	export CORES=$SLURM_CPUS_ON_NODE
 elif [[ "$OSTYPE" == "darwin"* ]]; then
@@ -41,7 +42,7 @@ DRAFT_FASTA=${PREFIX}_covid_spades/transcripts.fasta
 # Github:	https://github.com/malonge/RagTag
 export PATH=/Users/eric.au/miniconda3/bin:$PATH
 # Nucmer computed Genome to Genome alignments
-# http://mummer.sourceforge.net/
+# http://mummer.sourceforge.net
 
 echo "
 ragtag.py scaffold --aligner nucmer -o ${PREFIX}.covid.guided_assembly $REF $DRAFT_FASTA"
