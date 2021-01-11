@@ -50,10 +50,11 @@ cd ncov
 echo "
 gzip -d -c data/example_sequences.fasta.gz > data/example_sequences.fasta"
 gzip -d -c data/example_sequences.fasta.gz > data/example_sequences.fasta
+
 echo "
 snakemake --cores $CORES --profile ./my_profiles/getting_started"
 snakemake --cores $CORES --profile ./my_profiles/getting_started
 
 echo "
-snakemake --cores $CORES --profile ../south-usa-sarscov2/profiles/south-central/"
-snakemake --cores $CORES --profile ../south-usa-sarscov2/profiles/south-central/
+auspice view & open \"http://localhost:4000\""
+auspice view & open "http://localhost:4000"
