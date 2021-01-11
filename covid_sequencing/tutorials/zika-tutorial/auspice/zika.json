@@ -1,0 +1,3333 @@
+{
+  "meta": {
+    "build_url": "https://github.com/nextstrain/zika-tutorial",
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "author",
+        "title": "Author",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "Thailand",
+            "#511EA8"
+          ],
+          [
+            "Singapore",
+            "#4334BF"
+          ],
+          [
+            "French Polynesia",
+            "#4041C7"
+          ],
+          [
+            "American Samoa",
+            "#3F50CC"
+          ],
+          [
+            "Brazil",
+            "#56A0AF"
+          ],
+          [
+            "Ecuador",
+            "#63AC99"
+          ],
+          [
+            "Colombia",
+            "#6BB18E"
+          ],
+          [
+            "Venezuela",
+            "#86BB6E"
+          ],
+          [
+            "Panama",
+            "#A4BE56"
+          ],
+          [
+            "Nicaragua",
+            "#AFBD4F"
+          ],
+          [
+            "Honduras",
+            "#B9BC4A"
+          ],
+          [
+            "Guatemala",
+            "#CCB742"
+          ],
+          [
+            "Puerto Rico",
+            "#E68234"
+          ],
+          [
+            "Dominican Republic",
+            "#E4632E"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "region",
+        "scale": [
+          [
+            "Southeast Asia",
+            "#4274CE"
+          ],
+          [
+            "Oceania",
+            "#88BB6C"
+          ],
+          [
+            "South America",
+            "#E56C2F"
+          ],
+          [
+            "North America",
+            "#DC2F24"
+          ]
+        ],
+        "title": "Region",
+        "type": "categorical"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "filters": [
+      "country",
+      "region",
+      "author"
+    ],
+    "genome_annotations": {
+      "2K": {
+        "end": 6897,
+        "seqid": "config/zika_outgroup.gb",
+        "start": 6829,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "CA": {
+        "end": 456,
+        "seqid": "config/zika_outgroup.gb",
+        "start": 91,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ENV": {
+        "end": 2472,
+        "seqid": "config/zika_outgroup.gb",
+        "start": 961,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "MP": {
+        "end": 960,
+        "seqid": "config/zika_outgroup.gb",
+        "start": 736,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "NS1": {
+        "end": 3528,
+        "seqid": "config/zika_outgroup.gb",
+        "start": 2473,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "NS2A": {
+        "end": 4206,
+        "seqid": "config/zika_outgroup.gb",
+        "start": 3529,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "NS2B": {
+        "end": 4596,
+        "seqid": "config/zika_outgroup.gb",
+        "start": 4207,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "NS3": {
+        "end": 6447,
+        "seqid": "config/zika_outgroup.gb",
+        "start": 4597,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "NS4A": {
+        "end": 6828,
+        "seqid": "config/zika_outgroup.gb",
+        "start": 6448,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "NS4B": {
+        "end": 7650,
+        "seqid": "config/zika_outgroup.gb",
+        "start": 6898,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "NS5": {
+        "end": 10359,
+        "seqid": "config/zika_outgroup.gb",
+        "start": 7651,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "PRO": {
+        "end": 735,
+        "seqid": "config/zika_outgroup.gb",
+        "start": 457,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "nuc": {
+        "end": 10769,
+        "seqid": "config/zika_outgroup.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "source"
+      }
+    },
+    "geo_resolutions": [
+      {
+        "demes": {
+          "American Samoa": {
+            "latitude": -14.27806,
+            "longitude": -170.7025
+          },
+          "Brazil": {
+            "latitude": -10.3333332,
+            "longitude": -53.1999999
+          },
+          "Colombia": {
+            "latitude": 2.893108,
+            "longitude": -73.7845142
+          },
+          "Dominican Republic": {
+            "latitude": 18.50012,
+            "longitude": -69.98857
+          },
+          "Ecuador": {
+            "latitude": -1.3397667,
+            "longitude": -79.3666964
+          },
+          "French Polynesia": {
+            "latitude": -17.6797,
+            "longitude": -149.4068
+          },
+          "Guatemala": {
+            "latitude": 15.6356088,
+            "longitude": -89.8988086
+          },
+          "Honduras": {
+            "latitude": 15.0610686,
+            "longitude": -84.5978533
+          },
+          "Nicaragua": {
+            "latitude": 13.0,
+            "longitude": -85.0
+          },
+          "Panama": {
+            "latitude": 8.3096067,
+            "longitude": -81.3066245
+          },
+          "Puerto Rico": {
+            "latitude": 18.2459121,
+            "longitude": -66.4164147
+          },
+          "Singapore": {
+            "latitude": 1.2904527,
+            "longitude": 103.852038
+          },
+          "Thailand": {
+            "latitude": 14.8971921,
+            "longitude": 100.83273
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "Venezuela": {
+            "latitude": 8.0,
+            "longitude": -66.0
+          }
+        },
+        "key": "country"
+      },
+      {
+        "demes": {
+          "North America": {
+            "latitude": 28.2367447,
+            "longitude": -97.738017
+          },
+          "Oceania": {
+            "latitude": -25.0562891,
+            "longitude": 152.008576
+          },
+          "South America": {
+            "latitude": -13.083583,
+            "longitude": -58.470721
+          },
+          "Southeast Asia": {
+            "latitude": 3.020567,
+            "longitude": 112.390683
+          }
+        },
+        "key": "region"
+      }
+    ],
+    "maintainers": [
+      {
+        "name": "Trevor Bedford",
+        "url": "http://bedford.io/team/trevor-bedford/"
+      }
+    ],
+    "panels": [
+      "tree",
+      "map"
+    ],
+    "title": "Tutorial Nextstrain build for Zika virus",
+    "updated": "2021-01-10"
+  },
+  "tree": {
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "branch_attrs": {
+          "labels": {
+            "aa": "NS3: H584Y; PRO: N17S"
+          },
+          "mutations": {
+            "NS3": [
+              "H584Y"
+            ],
+            "PRO": [
+              "N17S"
+            ],
+            "nuc": [
+              "A255G",
+              "A506G",
+              "T541C",
+              "G636A",
+              "A786G",
+              "A798G",
+              "T1224C",
+              "C1287A",
+              "T1389C",
+              "T1974C",
+              "C2175T",
+              "T2388C",
+              "G2508A",
+              "G2715A",
+              "T2782C",
+              "A3015T",
+              "T3120C",
+              "T3237C",
+              "C3882T",
+              "T3972C",
+              "T4068C",
+              "C4311T",
+              "G4437A",
+              "G4506A",
+              "T4716C",
+              "T4983C",
+              "T5043C",
+              "C5271T",
+              "A5358G",
+              "C5370T",
+              "A5619G",
+              "T5658C",
+              "C6039T",
+              "C6346T",
+              "A6489G",
+              "G6564A",
+              "A6667C",
+              "T7033C",
+              "C7635T",
+              "T8295A",
+              "T9000C",
+              "T9423G",
+              "G9438A",
+              "T9483C",
+              "G9735A",
+              "C9792T",
+              "A9936G",
+              "G10191A",
+              "G10272A",
+              "T10460C"
+            ]
+          }
+        },
+        "children": [
+          {
+            "branch_attrs": {
+              "labels": {
+                "aa": "NS1: K206R; NS2A: I80V; NS4B: A112T; NS5: N402K, N556H"
+              },
+              "mutations": {
+                "NS1": [
+                  "K206R"
+                ],
+                "NS2A": [
+                  "I80V"
+                ],
+                "NS4B": [
+                  "A112T"
+                ],
+                "NS5": [
+                  "N402K",
+                  "N556H"
+                ],
+                "nuc": [
+                  "T210C",
+                  "C405T",
+                  "C759T",
+                  "T876C",
+                  "T1041C",
+                  "G1869C",
+                  "G2529A",
+                  "A3089G",
+                  "A3162G",
+                  "G3270A",
+                  "A3750G",
+                  "C3757T",
+                  "A3766G",
+                  "C5496T",
+                  "A5832G",
+                  "A6144G",
+                  "C6264T",
+                  "T6993C",
+                  "T7170C",
+                  "G7231A",
+                  "T7320A",
+                  "C7461T",
+                  "C7672T",
+                  "T8052C",
+                  "T8190C",
+                  "C8856A",
+                  "A9316C",
+                  "G9327A"
+                ]
+              }
+            },
+            "name": "Thailand/1610acTw",
+            "node_attrs": {
+              "accession": "MF692778",
+              "author": {
+                "author": "Lin et al",
+                "journal": "Unpublished",
+                "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/",
+                "title": "Imported Zika virus strains, Taiwan, 2016",
+                "value": "Lin et al"
+              },
+              "country": {
+                "confidence": {
+                  "Thailand": 1.0
+                },
+                "entropy": -1.000088900581841e-12,
+                "value": "Thailand"
+              },
+              "div": 0.005776831146630041,
+              "num_date": {
+                "confidence": [
+                  2016.7595260203377,
+                  2016.8319672131147
+                ],
+                "value": 2016.8319672131147
+              },
+              "region": {
+                "confidence": {
+                  "Southeast Asia": 1.0
+                },
+                "entropy": -1.000088900581841e-12,
+                "value": "Southeast Asia"
+              },
+              "url": "https://www.ncbi.nlm.nih.gov/nuccore/MF692778"
+            }
+          },
+          {
+            "branch_attrs": {
+              "labels": {
+                "aa": "NS1: V194A; PRO: T74A"
+              },
+              "mutations": {
+                "NS1": [
+                  "V194A"
+                ],
+                "PRO": [
+                  "T74A"
+                ],
+                "nuc": [
+                  "A676G",
+                  "C1221T",
+                  "T1848C",
+                  "T3053C",
+                  "A3360G",
+                  "T3928C",
+                  "G4152A",
+                  "A5727G",
+                  "T6087C"
+                ]
+              }
+            },
+            "children": [
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "aa": "PRO: G79V"
+                  },
+                  "mutations": {
+                    "PRO": [
+                      "G79V"
+                    ],
+                    "nuc": [
+                      "G692T",
+                      "C4716T",
+                      "G4767A",
+                      "G6489A",
+                      "A7821G",
+                      "A10335G"
+                    ]
+                  }
+                },
+                "name": "SG_018",
+                "node_attrs": {
+                  "accession": "KY241688",
+                  "author": {
+                    "author": "Ho et al",
+                    "journal": "Lancet Infect Dis (2017) In press",
+                    "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/",
+                    "title": "Outbreak of Zika virus infection in Singapore: an epidemiological, entomological, virological, and clinical analysis",
+                    "value": "Ho et al"
+                  },
+                  "country": {
+                    "confidence": {
+                      "Singapore": 0.9999999999999999
+                    },
+                    "entropy": -9.99866855976916e-13,
+                    "value": "Singapore"
+                  },
+                  "div": 0.004561957912527456,
+                  "num_date": {
+                    "confidence": [
+                      2016.700819672131,
+                      2016.700819672131
+                    ],
+                    "value": 2016.700819672131
+                  },
+                  "region": {
+                    "confidence": {
+                      "Southeast Asia": 0.9999999999999999
+                    },
+                    "entropy": -9.99866855976916e-13,
+                    "value": "Southeast Asia"
+                  },
+                  "url": "https://www.ncbi.nlm.nih.gov/nuccore/KY241688"
+                }
+              },
+              {
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C4503T",
+                      "T6393C"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "branch_attrs": {
+                      "labels": {
+                        "aa": "PRO: A74T"
+                      },
+                      "mutations": {
+                        "PRO": [
+                          "A74T"
+                        ],
+                        "nuc": [
+                          "G676A",
+                          "C8016T",
+                          "T8433C"
+                        ]
+                      }
+                    },
+                    "name": "SG_056",
+                    "node_attrs": {
+                      "accession": "KY241726",
+                      "author": {
+                        "author": "Ho et al",
+                        "journal": "Lancet Infect Dis (2017) In press",
+                        "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/",
+                        "title": "Outbreak of Zika virus infection in Singapore: an epidemiological, entomological, virological, and clinical analysis",
+                        "value": "Ho et al"
+                      },
+                      "country": {
+                        "confidence": {
+                          "Singapore": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "Singapore"
+                      },
+                      "div": 0.0044686603040818024,
+                      "num_date": {
+                        "confidence": [
+                          2016.6571038251366,
+                          2016.6571038251366
+                        ],
+                        "value": 2016.6571038251366
+                      },
+                      "region": {
+                        "confidence": {
+                          "Southeast Asia": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "Southeast Asia"
+                      },
+                      "url": "https://www.ncbi.nlm.nih.gov/nuccore/KY241726"
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "T891C",
+                          "T7500A",
+                          "T7843C"
+                        ]
+                      }
+                    },
+                    "name": "SG_027",
+                    "node_attrs": {
+                      "accession": "KY241697",
+                      "author": {
+                        "author": "Ho et al",
+                        "journal": "Lancet Infect Dis (2017) In press",
+                        "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/",
+                        "title": "Outbreak of Zika virus infection in Singapore: an epidemiological, entomological, virological, and clinical analysis",
+                        "value": "Ho et al"
+                      },
+                      "country": {
+                        "confidence": {
+                          "Singapore": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "Singapore"
+                      },
+                      "div": 0.004468719572844615,
+                      "num_date": {
+                        "confidence": [
+                          2016.6543715846994,
+                          2016.6543715846994
+                        ],
+                        "value": 2016.6543715846994
+                      },
+                      "region": {
+                        "confidence": {
+                          "Southeast Asia": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "Southeast Asia"
+                      },
+                      "url": "https://www.ncbi.nlm.nih.gov/nuccore/KY241697"
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "name": "SG_074",
+                    "node_attrs": {
+                      "accession": "KY241744",
+                      "author": {
+                        "author": "Ho et al",
+                        "journal": "Lancet Infect Dis (2017) In press",
+                        "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/",
+                        "title": "Outbreak of Zika virus infection in Singapore: an epidemiological, entomological, virological, and clinical analysis",
+                        "value": "Ho et al"
+                      },
+                      "country": {
+                        "confidence": {
+                          "Singapore": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "Singapore"
+                      },
+                      "div": 0.004189906014982425,
+                      "num_date": {
+                        "confidence": [
+                          2016.6571038251366,
+                          2016.6571038251366
+                        ],
+                        "value": 2016.6571038251366
+                      },
+                      "region": {
+                        "confidence": {
+                          "Southeast Asia": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "Southeast Asia"
+                      },
+                      "url": "https://www.ncbi.nlm.nih.gov/nuccore/KY241744"
+                    }
+                  }
+                ],
+                "name": "NODE_0000007",
+                "node_attrs": {
+                  "country": {
+                    "confidence": {
+                      "Singapore": 0.9999822589612091
+                    },
+                    "entropy": 0.00024666208965065623,
+                    "value": "Singapore"
+                  },
+                  "div": 0.004189906014982425,
+                  "num_date": {
+                    "confidence": [
+                      2016.0546695711334,
+                      2016.5773409771532
+                    ],
+                    "value": 2016.491860909915
+                  },
+                  "region": {
+                    "confidence": {
+                      "Southeast Asia": 0.9999984781425196
+                    },
+                    "entropy": 2.3043845473501945e-05,
+                    "value": "Southeast Asia"
+                  }
+                }
+              }
+            ],
+            "name": "NODE_0000006",
+            "node_attrs": {
+              "country": {
+                "confidence": {
+                  "French Polynesia": 0.0013344682812347236,
+                  "Singapore": 0.986372324145846,
+                  "Thailand": 0.007400541905458224
+                },
+                "entropy": 0.09677159837594135,
+                "value": "Singapore"
+              },
+              "div": 0.004004084150891599,
+              "num_date": {
+                "confidence": [
+                  2015.6811306777777,
+                  2016.3493593269395
+                ],
+                "value": 2016.2279205726368
+              },
+              "region": {
+                "confidence": {
+                  "Southeast Asia": 0.9995527958517674
+                },
+                "entropy": 0.004130564819881719,
+                "value": "Southeast Asia"
+              }
+            }
+          }
+        ],
+        "name": "NODE_0000005",
+        "node_attrs": {
+          "country": {
+            "confidence": {
+              "American Samoa": 0.024899157103348384,
+              "French Polynesia": 0.05459031616275727,
+              "Singapore": 0.49657304790297213,
+              "Thailand": 0.3073037597537258
+            },
+            "entropy": 1.490953573692988,
+            "value": "Singapore"
+          },
+          "div": 0.003167429767823019,
+          "num_date": {
+            "confidence": [
+              2014.6780849444528,
+              2015.6424438147583
+            ],
+            "value": 2015.0815490653704
+          },
+          "region": {
+            "confidence": {
+              "North America": 0.0010933271546532146,
+              "Oceania": 0.015698512743419126,
+              "Southeast Asia": 0.9822503312571796
+            },
+            "entropy": 0.09691839690010245,
+            "value": "Southeast Asia"
+          }
+        }
+      },
+      {
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "branch_attrs": {
+              "labels": {
+                "aa": "CA: S109N; ENV: K419R; NS1: R324Q; NS5: N624S, K670R"
+              },
+              "mutations": {
+                "CA": [
+                  "S109N"
+                ],
+                "ENV": [
+                  "K419R"
+                ],
+                "NS1": [
+                  "R324Q"
+                ],
+                "NS5": [
+                  "N624S",
+                  "K670R"
+                ],
+                "nuc": [
+                  "T249C",
+                  "G416A",
+                  "C789T",
+                  "T2032C",
+                  "T2076C",
+                  "A2216G",
+                  "T3321C",
+                  "G3443A",
+                  "C4428T",
+                  "T4602A",
+                  "A4671G",
+                  "T4740C",
+                  "T5286C",
+                  "T5676C",
+                  "T6405C",
+                  "C6475T",
+                  "T7026C",
+                  "G7230A",
+                  "C8145T",
+                  "T8652C",
+                  "C8748T",
+                  "A9521G",
+                  "T9595C",
+                  "A9659G",
+                  "A9768G",
+                  "C10596T"
+                ]
+              }
+            },
+            "children": [
+              {
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "name": "ZKC2/2016",
+                "node_attrs": {
+                  "accession": "KX253996",
+                  "author": {
+                    "author": "Wu et al",
+                    "journal": "Submitted (18-MAY-2016) Center for Diseases Control and Prevention of Guangdong Province; National Institute of Viral Disease Control and Prevention, China",
+                    "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/",
+                    "title": "Direct Submission",
+                    "value": "Wu et al"
+                  },
+                  "country": {
+                    "confidence": {
+                      "American Samoa": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "American Samoa"
+                  },
+                  "div": 0.003908692600450682,
+                  "num_date": {
+                    "confidence": [
+                      2016.127049180328,
+                      2016.127049180328
+                    ],
+                    "value": 2016.127049180328
+                  },
+                  "region": {
+                    "confidence": {
+                      "Oceania": 0.9999999999999999
+                    },
+                    "entropy": -9.99866855976916e-13,
+                    "value": "Oceania"
+                  },
+                  "url": "https://www.ncbi.nlm.nih.gov/nuccore/KX253996"
+                }
+              },
+              {
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "name": "SMGC_1",
+                "node_attrs": {
+                  "accession": "KX266255",
+                  "author": {
+                    "author": "Bi et al",
+                    "journal": "Chin. Sci. Bull. 61 (22), 2463-2474 (2016)",
+                    "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/",
+                    "title": "Genetic and Biological Characterization for Zika Viruses Imported through Shenzhen Port",
+                    "value": "Bi et al"
+                  },
+                  "country": {
+                    "confidence": {
+                      "American Samoa": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "American Samoa"
+                  },
+                  "div": 0.003908692600450682,
+                  "num_date": {
+                    "confidence": [
+                      2016.1215846994535,
+                      2016.1215846994535
+                    ],
+                    "value": 2016.1215846994535
+                  },
+                  "region": {
+                    "confidence": {
+                      "Oceania": 0.9999999999999999
+                    },
+                    "entropy": -9.99866855976916e-13,
+                    "value": "Oceania"
+                  },
+                  "url": "https://www.ncbi.nlm.nih.gov/nuccore/KX266255"
+                }
+              }
+            ],
+            "name": "NODE_0000004",
+            "node_attrs": {
+              "country": {
+                "confidence": {
+                  "American Samoa": 0.9885825691351987,
+                  "French Polynesia": 0.005821615220336394
+                },
+                "entropy": 0.08454884763322372,
+                "value": "American Samoa"
+              },
+              "div": 0.003908692600450682,
+              "num_date": {
+                "confidence": [
+                  2016.0058954777971,
+                  2016.1215846994535
+                ],
+                "value": 2016.1215846994535
+              },
+              "region": {
+                "confidence": {
+                  "Oceania": 0.9995125723541451
+                },
+                "entropy": 0.004632526052836296,
+                "value": "Oceania"
+              }
+            }
+          },
+          {
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G9711A"
+                ]
+              }
+            },
+            "children": [
+              {
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C3433T",
+                      "A3639G",
+                      "G8478A"
+                    ]
+                  }
+                },
+                "name": "1_0087_PF",
+                "node_attrs": {
+                  "accession": "KX447509",
+                  "author": {
+                    "author": "Pettersson et al",
+                    "journal": "MBio 7 (5), e01239-16 (2016)",
+                    "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/27729507",
+                    "title": "How Did Zika Virus Emerge in the Pacific Islands and Latin America?",
+                    "value": "Pettersson et al"
+                  },
+                  "country": {
+                    "confidence": {
+                      "French Polynesia": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "French Polynesia"
+                  },
+                  "div": 0.0018600577506331316,
+                  "num_date": {
+                    "confidence": [
+                      2013.926428325994,
+                      2013.9986301369863
+                    ],
+                    "value": 2013.9986301369863
+                  },
+                  "region": {
+                    "confidence": {
+                      "Oceania": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "Oceania"
+                  },
+                  "url": "https://www.ncbi.nlm.nih.gov/nuccore/KX447509"
+                }
+              },
+              {
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G1158A"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G765A",
+                          "G1827A",
+                          "T1974C"
+                        ]
+                      }
+                    },
+                    "name": "1_0181_PF",
+                    "node_attrs": {
+                      "accession": "KX447512",
+                      "author": {
+                        "author": "Pettersson et al",
+                        "journal": "MBio 7 (5), e01239-16 (2016)",
+                        "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/27729507",
+                        "title": "How Did Zika Virus Emerge in the Pacific Islands and Latin America?",
+                        "value": "Pettersson et al"
+                      },
+                      "country": {
+                        "confidence": {
+                          "French Polynesia": 0.9999999999999999
+                        },
+                        "entropy": -9.99866855976916e-13,
+                        "value": "French Polynesia"
+                      },
+                      "div": 0.0019529417855244533,
+                      "num_date": {
+                        "confidence": [
+                          2013.9306379529069,
+                          2013.9986301369863
+                        ],
+                        "value": 2013.9986301369863
+                      },
+                      "region": {
+                        "confidence": {
+                          "Oceania": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "Oceania"
+                      },
+                      "url": "https://www.ncbi.nlm.nih.gov/nuccore/KX447512"
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "A4227G",
+                          "C8748T"
+                        ]
+                      }
+                    },
+                    "name": "1_0199_PF",
+                    "node_attrs": {
+                      "accession": "KX447519",
+                      "author": {
+                        "author": "Pettersson et al",
+                        "journal": "MBio 7 (5), e01239-16 (2016)",
+                        "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/27729507",
+                        "title": "How Did Zika Virus Emerge in the Pacific Islands and Latin America?",
+                        "value": "Pettersson et al"
+                      },
+                      "country": {
+                        "confidence": {
+                          "French Polynesia": 0.9999999999999999
+                        },
+                        "entropy": -9.99866855976916e-13,
+                        "value": "French Polynesia"
+                      },
+                      "div": 0.0018608721386586305,
+                      "num_date": {
+                        "confidence": [
+                          2013.8638310786148,
+                          2013.9136986301369
+                        ],
+                        "value": 2013.9136986301369
+                      },
+                      "region": {
+                        "confidence": {
+                          "Oceania": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "Oceania"
+                      },
+                      "url": "https://www.ncbi.nlm.nih.gov/nuccore/KX447519"
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "labels": {
+                        "aa": "NS5: M114V"
+                      },
+                      "mutations": {
+                        "NS5": [
+                          "M114V"
+                        ],
+                        "nuc": [
+                          "T2637C",
+                          "T3501C",
+                          "T7500C",
+                          "A7990G",
+                          "C8391T",
+                          "G9417A",
+                          "G10375A"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "A5298G"
+                            ]
+                          }
+                        },
+                        "children": [
+                          {
+                            "branch_attrs": {
+                              "labels": {
+                                "aa": "CA: I80T; NS5: A91V"
+                              },
+                              "mutations": {
+                                "CA": [
+                                  "I80T"
+                                ],
+                                "NS5": [
+                                  "A91V"
+                                ],
+                                "nuc": [
+                                  "T329C",
+                                  "T762C",
+                                  "G1170T",
+                                  "G1458A",
+                                  "A1482G",
+                                  "C1887T",
+                                  "C2838T",
+                                  "T3549C",
+                                  "T3576C",
+                                  "C4866T",
+                                  "T5070C",
+                                  "T5139C",
+                                  "T6612A",
+                                  "T6654C",
+                                  "T7077C",
+                                  "T7134C",
+                                  "C7488T",
+                                  "C7922T",
+                                  "T8835C",
+                                  "T9000C",
+                                  "C9225T",
+                                  "C9279T"
+                                ]
+                              }
+                            },
+                            "name": "PRVABC59",
+                            "node_attrs": {
+                              "accession": "KU501215",
+                              "author": {
+                                "author": "Lanciotti et al",
+                                "journal": "Emerging Infect. Dis. 22 (5), 933-935 (2016)",
+                                "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/27088323",
+                                "title": "Phylogeny of Zika Virus in Western Hemisphere, 2015",
+                                "value": "Lanciotti et al"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "Puerto Rico": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "Puerto Rico"
+                              },
+                              "div": 0.004464853686814808,
+                              "num_date": {
+                                "confidence": [
+                                  2015.9264151573998,
+                                  2015.9986301369863
+                                ],
+                                "value": 2015.9986301369863
+                              },
+                              "region": {
+                                "confidence": {
+                                  "North America": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "North America"
+                              },
+                              "url": "https://www.ncbi.nlm.nih.gov/nuccore/KU501215"
+                            }
+                          },
+                          {
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "G4767A"
+                                ]
+                              }
+                            },
+                            "children": [
+                              {
+                                "branch_attrs": {
+                                  "labels": {
+                                    "aa": "ENV: S368G, I448V; NS5: P247S, K560R"
+                                  },
+                                  "mutations": {
+                                    "ENV": [
+                                      "S368G",
+                                      "I448V"
+                                    ],
+                                    "NS5": [
+                                      "P247S",
+                                      "K560R"
+                                    ],
+                                    "nuc": [
+                                      "A2062G",
+                                      "G2205A",
+                                      "A2302G",
+                                      "T2452C",
+                                      "T3036C",
+                                      "G3690A",
+                                      "T3928C",
+                                      "T6243C",
+                                      "G6627A",
+                                      "T7551C",
+                                      "T8028C",
+                                      "C8389T",
+                                      "C9069T",
+                                      "A9329G",
+                                      "T9432C"
+                                    ]
+                                  }
+                                },
+                                "name": "Brazil/2016/ZBRC16",
+                                "node_attrs": {
+                                  "accession": "KY558991",
+                                  "author": {
+                                    "author": "Faria et al",
+                                    "journal": "Nature 546 (7658), 406-410 (2017)",
+                                    "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/28538727",
+                                    "title": "Establishment and cryptic transmission of Zika virus in Brazil and the Americas",
+                                    "value": "Faria et al"
+                                  },
+                                  "country": {
+                                    "confidence": {
+                                      "Brazil": 1.0
+                                    },
+                                    "entropy": -1.000088900581841e-12,
+                                    "value": "Brazil"
+                                  },
+                                  "div": 0.003919785910560405,
+                                  "num_date": {
+                                    "confidence": [
+                                      2016.0505464480875,
+                                      2016.0505464480875
+                                    ],
+                                    "value": 2016.0505464480875
+                                  },
+                                  "region": {
+                                    "confidence": {
+                                      "South America": 1.0
+                                    },
+                                    "entropy": -1.000088900581841e-12,
+                                    "value": "South America"
+                                  },
+                                  "url": "https://www.ncbi.nlm.nih.gov/nuccore/KY558991"
+                                }
+                              },
+                              {
+                                "branch_attrs": {
+                                  "labels": {
+                                    "aa": "NS1: G100A; NS3: M572L; NS5: R525C"
+                                  },
+                                  "mutations": {
+                                    "NS1": [
+                                      "G100A"
+                                    ],
+                                    "NS3": [
+                                      "M572L"
+                                    ],
+                                    "NS5": [
+                                      "R525C"
+                                    ],
+                                    "nuc": [
+                                      "G2771C",
+                                      "G3600A",
+                                      "G3846A",
+                                      "G5178A",
+                                      "A6310C",
+                                      "T6708C",
+                                      "C6720T",
+                                      "C9223T"
+                                    ]
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "branch_attrs": {
+                                      "labels": {
+                                        "aa": "ENV: V56I; NS5: K174R"
+                                      },
+                                      "mutations": {
+                                        "ENV": [
+                                          "V56I"
+                                        ],
+                                        "NS5": [
+                                          "K174R"
+                                        ],
+                                        "nuc": [
+                                          "G1126A",
+                                          "A1689G",
+                                          "A2313T",
+                                          "C6475T",
+                                          "G6966A",
+                                          "C7749T",
+                                          "T8094C",
+                                          "A8171G",
+                                          "G9438A"
+                                        ]
+                                      }
+                                    },
+                                    "name": "V8375",
+                                    "node_attrs": {
+                                      "accession": "KU501217",
+                                      "author": {
+                                        "author": "Lanciotti et al",
+                                        "journal": "Emerging Infect. Dis. 22 (5), 933-935 (2016)",
+                                        "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/27088323",
+                                        "title": "Phylogeny of Zika Virus in Western Hemisphere, 2015",
+                                        "value": "Lanciotti et al"
+                                      },
+                                      "country": {
+                                        "confidence": {
+                                          "Guatemala": 1.0
+                                        },
+                                        "entropy": -1.000088900581841e-12,
+                                        "value": "Guatemala"
+                                      },
+                                      "div": 0.0040915208708033534,
+                                      "num_date": {
+                                        "confidence": [
+                                          2015.8342465753424,
+                                          2015.8342465753424
+                                        ],
+                                        "value": 2015.8342465753424
+                                      },
+                                      "region": {
+                                        "confidence": {
+                                          "North America": 1.0
+                                        },
+                                        "entropy": -1.000088900581841e-12,
+                                        "value": "North America"
+                                      },
+                                      "url": "https://www.ncbi.nlm.nih.gov/nuccore/KU501217"
+                                    }
+                                  },
+                                  {
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "T4716C",
+                                              "T4888C",
+                                              "A6945G",
+                                              "T9516C"
+                                            ]
+                                          }
+                                        },
+                                        "name": "HND/2016/HU_ME59",
+                                        "node_attrs": {
+                                          "accession": "KY785418",
+                                          "author": {
+                                            "author": "Metsky et al",
+                                            "journal": "Nature 546 (7658), 411-415 (2017)",
+                                            "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/28538734",
+                                            "title": "Zika virus evolution and spread in the Americas",
+                                            "value": "Metsky et al"
+                                          },
+                                          "country": {
+                                            "confidence": {
+                                              "Honduras": 1.0
+                                            },
+                                            "entropy": -1.000088900581841e-12,
+                                            "value": "Honduras"
+                                          },
+                                          "div": 0.003625964172099705,
+                                          "num_date": {
+                                            "confidence": [
+                                              2016.3647540983607,
+                                              2016.3647540983607
+                                            ],
+                                            "value": 2016.3647540983607
+                                          },
+                                          "region": {
+                                            "confidence": {
+                                              "North America": 1.0
+                                            },
+                                            "entropy": -1.000088900581841e-12,
+                                            "value": "North America"
+                                          },
+                                          "url": "https://www.ncbi.nlm.nih.gov/nuccore/KY785418"
+                                        }
+                                      },
+                                      {
+                                        "branch_attrs": {
+                                          "labels": {
+                                            "aa": "NS2B: S5G; NS4B: I176L"
+                                          },
+                                          "mutations": {
+                                            "NS2B": [
+                                              "S5G"
+                                            ],
+                                            "NS4B": [
+                                              "I176L"
+                                            ],
+                                            "nuc": [
+                                              "T1449C",
+                                              "A4219G",
+                                              "A6444G",
+                                              "A6846G",
+                                              "A7423T",
+                                              "G8064A"
+                                            ]
+                                          }
+                                        },
+                                        "name": "Nica1_16",
+                                        "node_attrs": {
+                                          "accession": "KX421195",
+                                          "author": {
+                                            "author": "Tabata et al",
+                                            "journal": "Cell Host Microbe 20 (2), 155-166 (2016)",
+                                            "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/27443522",
+                                            "title": "Zika Virus Targets Different Primary Human Placental Cells, Suggesting Two Routes for Vertical Transmission",
+                                            "value": "Tabata et al"
+                                          },
+                                          "country": {
+                                            "confidence": {
+                                              "Nicaragua": 1.0
+                                            },
+                                            "entropy": -1.000088900581841e-12,
+                                            "value": "Nicaragua"
+                                          },
+                                          "div": 0.003811623588444787,
+                                          "num_date": {
+                                            "confidence": [
+                                              2016.0505464480875,
+                                              2016.0505464480875
+                                            ],
+                                            "value": 2016.0505464480875
+                                          },
+                                          "region": {
+                                            "confidence": {
+                                              "North America": 1.0
+                                            },
+                                            "entropy": -1.000088900581841e-12,
+                                            "value": "North America"
+                                          },
+                                          "url": "https://www.ncbi.nlm.nih.gov/nuccore/KX421195"
+                                        }
+                                      }
+                                    ],
+                                    "name": "NODE_0000012",
+                                    "node_attrs": {
+                                      "country": {
+                                        "confidence": {
+                                          "Brazil": 0.0843644935153239,
+                                          "Guatemala": 0.11287860917371541,
+                                          "Honduras": 0.3689197742809156,
+                                          "Nicaragua": 0.36891977428091177
+                                        },
+                                        "entropy": 1.5229842201317922,
+                                        "value": "Honduras"
+                                      },
+                                      "div": 0.0032540796625635253,
+                                      "num_date": {
+                                        "confidence": [
+                                          2015.4230577843518,
+                                          2015.8125399886965
+                                        ],
+                                        "value": 2015.587529041705
+                                      },
+                                      "region": {
+                                        "confidence": {
+                                          "North America": 0.9959946203248555,
+                                          "South America": 0.003940570109330731
+                                        },
+                                        "entropy": 0.026483058952216396,
+                                        "value": "North America"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "name": "NODE_0000021",
+                                "node_attrs": {
+                                  "country": {
+                                    "confidence": {
+                                      "Brazil": 0.3011756522124028,
+                                      "Guatemala": 0.38798607925320117,
+                                      "Honduras": 0.11416004647109528,
+                                      "Nicaragua": 0.11416004647109342
+                                    },
+                                    "entropy": 1.622103609879463,
+                                    "value": "Guatemala"
+                                  },
+                                  "div": 0.0032540796625635253,
+                                  "num_date": {
+                                    "confidence": [
+                                      2015.3151205785593,
+                                      2015.627869426265
+                                    ],
+                                    "value": 2015.5161986615549
+                                  },
+                                  "region": {
+                                    "confidence": {
+                                      "North America": 0.9537026167407148,
+                                      "South America": 0.045990386259208586
+                                    },
+                                    "entropy": 0.18951367620502163,
+                                    "value": "North America"
+                                  }
+                                }
+                              }
+                            ],
+                            "name": "NODE_0000020",
+                            "node_attrs": {
+                              "country": {
+                                "confidence": {
+                                  "Brazil": 0.8723601394289687,
+                                  "Guatemala": 0.04294847470020213,
+                                  "Honduras": 0.012724728292160047,
+                                  "Puerto Rico": 0.032786437981561396
+                                },
+                                "entropy": 0.631241418517802,
+                                "value": "Brazil"
+                              },
+                              "div": 0.0025104208431333745,
+                              "num_date": {
+                                "confidence": [
+                                  2014.7034166683948,
+                                  2015.1351829964783
+                                ],
+                                "value": 2014.9205012316195
+                              },
+                              "region": {
+                                "confidence": {
+                                  "North America": 0.4438831610586156,
+                                  "South America": 0.5553879484362244
+                                },
+                                "entropy": 0.6928406768938343,
+                                "value": "South America"
+                              }
+                            }
+                          }
+                        ],
+                        "name": "NODE_0000019",
+                        "node_attrs": {
+                          "country": {
+                            "confidence": {
+                              "Brazil": 0.8598159082437761,
+                              "French Polynesia": 0.012233809048637238,
+                              "Guatemala": 0.014594689487235479,
+                              "Puerto Rico": 0.0839271725181735
+                            },
+                            "entropy": 0.6238098996353804,
+                            "value": "Brazil"
+                          },
+                          "div": 0.002417534126011472,
+                          "num_date": {
+                            "confidence": [
+                              2014.5956372672931,
+                              2014.9946585190028
+                            ],
+                            "value": 2014.8422568306034
+                          },
+                          "region": {
+                            "confidence": {
+                              "North America": 0.4329056220188676,
+                              "South America": 0.5659996737104046
+                            },
+                            "entropy": 0.6925989415407295,
+                            "value": "South America"
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "C2517T",
+                              "T3972C"
+                            ]
+                          }
+                        },
+                        "children": [
+                          {
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "A1800C",
+                                  "A1851G",
+                                  "C2562T",
+                                  "C6600T",
+                                  "C7437T",
+                                  "G8031A",
+                                  "C8271T",
+                                  "A9936G"
+                                ]
+                              }
+                            },
+                            "name": "Brazil/2015/ZBRC301",
+                            "node_attrs": {
+                              "accession": "KY558995",
+                              "author": {
+                                "author": "Faria et al",
+                                "journal": "Nature 546 (7658), 406-410 (2017)",
+                                "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/28538727",
+                                "title": "Establishment and cryptic transmission of Zika virus in Brazil and the Americas",
+                                "value": "Faria et al"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "Brazil": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "Brazil"
+                              },
+                              "div": 0.003255965623527612,
+                              "num_date": {
+                                "confidence": [
+                                  2015.36301369863,
+                                  2015.36301369863
+                                ],
+                                "value": 2015.36301369863
+                              },
+                              "region": {
+                                "confidence": {
+                                  "South America": 0.9999999999999999
+                                },
+                                "entropy": -9.99866855976916e-13,
+                                "value": "South America"
+                              },
+                              "url": "https://www.ncbi.nlm.nih.gov/nuccore/KY558995"
+                            }
+                          },
+                          {
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "C7488T"
+                                ]
+                              }
+                            },
+                            "children": [
+                              {
+                                "branch_attrs": {
+                                  "labels": {
+                                    "aa": "CA: A106T"
+                                  },
+                                  "mutations": {
+                                    "CA": [
+                                      "A106T"
+                                    ],
+                                    "nuc": [
+                                      "G406A"
+                                    ]
+                                  }
+                                },
+                                "name": "Brazil/2015/ZBRC303",
+                                "node_attrs": {
+                                  "accession": "KY558997",
+                                  "author": {
+                                    "author": "Faria et al",
+                                    "journal": "Nature 546 (7658), 406-410 (2017)",
+                                    "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/28538727",
+                                    "title": "Establishment and cryptic transmission of Zika virus in Brazil and the Americas",
+                                    "value": "Faria et al"
+                                  },
+                                  "country": {
+                                    "confidence": {
+                                      "Brazil": 1.0
+                                    },
+                                    "entropy": -1.000088900581841e-12,
+                                    "value": "Brazil"
+                                  },
+                                  "div": 0.0026976600706311517,
+                                  "num_date": {
+                                    "confidence": [
+                                      2015.3657534246574,
+                                      2015.3657534246574
+                                    ],
+                                    "value": 2015.3657534246574
+                                  },
+                                  "region": {
+                                    "confidence": {
+                                      "South America": 1.0
+                                    },
+                                    "entropy": -1.000088900581841e-12,
+                                    "value": "South America"
+                                  },
+                                  "url": "https://www.ncbi.nlm.nih.gov/nuccore/KY558997"
+                                }
+                              },
+                              {
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "T876C",
+                                      "C2646T",
+                                      "A4341G",
+                                      "C5988T",
+                                      "T6618C",
+                                      "A7116G",
+                                      "T7506C",
+                                      "G8040A",
+                                      "A8820G",
+                                      "C9066T",
+                                      "T9717C"
+                                    ]
+                                  }
+                                },
+                                "name": "BRA/2016/FC_6706",
+                                "node_attrs": {
+                                  "accession": "KY785433",
+                                  "author": {
+                                    "author": "Metsky et al",
+                                    "journal": "Nature 546 (7658), 411-415 (2017)",
+                                    "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/28538734",
+                                    "title": "Zika virus evolution and spread in the Americas",
+                                    "value": "Metsky et al"
+                                  },
+                                  "country": {
+                                    "confidence": {
+                                      "Brazil": 1.0
+                                    },
+                                    "entropy": -1.000088900581841e-12,
+                                    "value": "Brazil"
+                                  },
+                                  "div": 0.0036284836588748853,
+                                  "num_date": {
+                                    "confidence": [
+                                      2016.26912568306,
+                                      2016.26912568306
+                                    ],
+                                    "value": 2016.26912568306
+                                  },
+                                  "region": {
+                                    "confidence": {
+                                      "South America": 1.0
+                                    },
+                                    "entropy": -1.000088900581841e-12,
+                                    "value": "South America"
+                                  },
+                                  "url": "https://www.ncbi.nlm.nih.gov/nuccore/KY785433"
+                                }
+                              }
+                            ],
+                            "name": "NODE_0000013",
+                            "node_attrs": {
+                              "country": {
+                                "confidence": {
+                                  "Brazil": 0.999386864524401
+                                },
+                                "entropy": 0.00662862207210697,
+                                "value": "Brazil"
+                              },
+                              "div": 0.0026033209667655596,
+                              "num_date": {
+                                "confidence": [
+                                  2014.9899044825147,
+                                  2015.3657534246574
+                                ],
+                                "value": 2015.2287179110074
+                              },
+                              "region": {
+                                "confidence": {
+                                  "South America": 0.9995403318269599
+                                },
+                                "entropy": 0.004160944214240077,
+                                "value": "South America"
+                              }
+                            }
+                          },
+                          {
+                            "branch_attrs": {
+                              "labels": {
+                                "aa": "CA: D107E; NS1: R324W; NS5: T833A"
+                              },
+                              "mutations": {
+                                "CA": [
+                                  "D107E"
+                                ],
+                                "NS1": [
+                                  "R324W"
+                                ],
+                                "NS5": [
+                                  "T833A"
+                                ],
+                                "nuc": [
+                                  "A3C",
+                                  "T411A",
+                                  "T738C",
+                                  "C858T",
+                                  "G864T",
+                                  "C1381T",
+                                  "C3442T",
+                                  "A3894G",
+                                  "C5991T",
+                                  "C9279T",
+                                  "A10147G"
+                                ]
+                              }
+                            },
+                            "children": [
+                              {
+                                "branch_attrs": {
+                                  "labels": {
+                                    "aa": "PRO: N17K"
+                                  },
+                                  "mutations": {
+                                    "PRO": [
+                                      "N17K"
+                                    ],
+                                    "nuc": [
+                                      "C507A",
+                                      "C1233T",
+                                      "C2163T",
+                                      "T7843C",
+                                      "T10332C"
+                                    ]
+                                  }
+                                },
+                                "name": "Colombia/2016/ZC204Se",
+                                "node_attrs": {
+                                  "accession": "KY317939",
+                                  "author": {
+                                    "author": "Quick et al",
+                                    "journal": "Nat Protoc 12 (6), 1261-1276 (2017)",
+                                    "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/28538739",
+                                    "title": "Multiplex PCR method for MinION and Illumina sequencing of Zika and other virus genomes directly from clinical samples",
+                                    "value": "Quick et al"
+                                  },
+                                  "country": {
+                                    "confidence": {
+                                      "Colombia": 1.0
+                                    },
+                                    "entropy": -1.000088900581841e-12,
+                                    "value": "Colombia"
+                                  },
+                                  "div": 0.0039979459044643915,
+                                  "num_date": {
+                                    "confidence": [
+                                      2016.0150273224044,
+                                      2016.0150273224044
+                                    ],
+                                    "value": 2016.0150273224044
+                                  },
+                                  "region": {
+                                    "confidence": {
+                                      "South America": 1.0
+                                    },
+                                    "entropy": -1.000088900581841e-12,
+                                    "value": "South America"
+                                  },
+                                  "url": "https://www.ncbi.nlm.nih.gov/nuccore/KY317939"
+                                }
+                              },
+                              {
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "T1029C",
+                                      "T3705C"
+                                    ]
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "branch_attrs": {
+                                      "labels": {
+                                        "aa": "NS2B: M32I"
+                                      },
+                                      "mutations": {
+                                        "NS2B": [
+                                          "M32I"
+                                        ],
+                                        "nuc": [
+                                          "G23A",
+                                          "A35T",
+                                          "G40A",
+                                          "T2538C",
+                                          "A3750G",
+                                          "G3771A",
+                                          "G4302A",
+                                          "C7056T",
+                                          "T10344C"
+                                        ]
+                                      }
+                                    },
+                                    "name": "PAN/CDC_259359_V1_V3/2015",
+                                    "node_attrs": {
+                                      "accession": "KX156774",
+                                      "author": {
+                                        "author": "Shabman et al",
+                                        "journal": "Submitted (29-APR-2016) J. Craig Venter Institute, 9704 Medical Center Drive, Rockville, MD 20850, USA",
+                                        "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/",
+                                        "title": "Direct Submission",
+                                        "value": "Shabman et al"
+                                      },
+                                      "country": {
+                                        "confidence": {
+                                          "Panama": 1.0
+                                        },
+                                        "entropy": -1.000088900581841e-12,
+                                        "value": "Panama"
+                                      },
+                                      "div": 0.004555574134125807,
+                                      "num_date": {
+                                        "confidence": [
+                                          2015.9630136986302,
+                                          2015.9630136986302
+                                        ],
+                                        "value": 2015.9630136986302
+                                      },
+                                      "region": {
+                                        "confidence": {
+                                          "North America": 1.0
+                                        },
+                                        "entropy": -1.000088900581841e-12,
+                                        "value": "North America"
+                                      },
+                                      "url": "https://www.ncbi.nlm.nih.gov/nuccore/KX156774"
+                                    }
+                                  },
+                                  {
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "G2895A",
+                                          "T3804C",
+                                          "C4311T",
+                                          "T4605G",
+                                          "C6643T",
+                                          "T8862G"
+                                        ]
+                                      }
+                                    },
+                                    "children": [
+                                      {
+                                        "branch_attrs": {
+                                          "labels": {
+                                            "aa": "CA: E76D; NS1: T301P; NS5: A833T"
+                                          },
+                                          "mutations": {
+                                            "CA": [
+                                              "E76D"
+                                            ],
+                                            "NS1": [
+                                              "T301P"
+                                            ],
+                                            "NS5": [
+                                              "A833T"
+                                            ],
+                                            "nuc": [
+                                              "G318T",
+                                              "G438T",
+                                              "C1233T",
+                                              "C1416T",
+                                              "A3373C",
+                                              "C8016T",
+                                              "G10147A"
+                                            ]
+                                          }
+                                        },
+                                        "name": "VEN/UF_1/2016",
+                                        "node_attrs": {
+                                          "accession": "KX702400",
+                                          "author": {
+                                            "author": "Blohm et al",
+                                            "journal": "Genome Announc 5 (17), e00231-17 (2017)",
+                                            "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/28450510",
+                                            "title": "Complete Genome Sequences of Identical Zika virus Isolates in a Nursing Mother and Her Infant",
+                                            "value": "Blohm et al"
+                                          },
+                                          "country": {
+                                            "confidence": {
+                                              "Venezuela": 1.0
+                                            },
+                                            "entropy": -1.000088900581841e-12,
+                                            "value": "Venezuela"
+                                          },
+                                          "div": 0.004927143447308161,
+                                          "num_date": {
+                                            "confidence": [
+                                              2016.23087431694,
+                                              2016.23087431694
+                                            ],
+                                            "value": 2016.23087431694
+                                          },
+                                          "region": {
+                                            "confidence": {
+                                              "South America": 1.0
+                                            },
+                                            "entropy": -1.000088900581841e-12,
+                                            "value": "South America"
+                                          },
+                                          "url": "https://www.ncbi.nlm.nih.gov/nuccore/KX702400"
+                                        }
+                                      },
+                                      {
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "T1506C"
+                                            ]
+                                          }
+                                        },
+                                        "children": [
+                                          {
+                                            "branch_attrs": {
+                                              "labels": {
+                                                "aa": "CA: I80T; ENV: D83E"
+                                              },
+                                              "mutations": {
+                                                "CA": [
+                                                  "I80T"
+                                                ],
+                                                "ENV": [
+                                                  "D83E"
+                                                ],
+                                                "nuc": [
+                                                  "T329C",
+                                                  "C1209G"
+                                                ]
+                                              }
+                                            },
+                                            "name": "COL/FLR_00024/2015",
+                                            "node_attrs": {
+                                              "accession": "MF574569",
+                                              "author": {
+                                                "author": "Pickett et al",
+                                                "journal": "Submitted J. Craig Venter Institute, 9704 Medical Center Drive, Rockville, MD 20850, USA",
+                                                "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/",
+                                                "title": "Direct Submission",
+                                                "value": "Pickett et al"
+                                              },
+                                              "country": {
+                                                "confidence": {
+                                                  "Colombia": 1.0
+                                                },
+                                                "entropy": -1.000088900581841e-12,
+                                                "value": "Colombia"
+                                              },
+                                              "div": 0.004555317394400506,
+                                              "num_date": {
+                                                "confidence": [
+                                                  2015.9164383561645,
+                                                  2015.9986301369863
+                                                ],
+                                                "value": 2015.9763255530318
+                                              },
+                                              "region": {
+                                                "confidence": {
+                                                  "South America": 1.0
+                                                },
+                                                "entropy": -1.000088900581841e-12,
+                                                "value": "South America"
+                                              },
+                                              "url": "https://www.ncbi.nlm.nih.gov/nuccore/MF574569"
+                                            }
+                                          },
+                                          {
+                                            "branch_attrs": {
+                                              "labels": {
+                                                "aa": "NS1: L169I, G292E"
+                                              },
+                                              "mutations": {
+                                                "NS1": [
+                                                  "L169I",
+                                                  "G292E"
+                                                ],
+                                                "nuc": [
+                                                  "C2977A",
+                                                  "G3347A",
+                                                  "G5655A",
+                                                  "T8445C"
+                                                ]
+                                              }
+                                            },
+                                            "name": "COL/FLR_00008/2015",
+                                            "node_attrs": {
+                                              "accession": "MF574562",
+                                              "author": {
+                                                "author": "Pickett et al",
+                                                "journal": "Submitted J. Craig Venter Institute, 9704 Medical Center Drive, Rockville, MD 20850, USA",
+                                                "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/",
+                                                "title": "Direct Submission",
+                                                "value": "Pickett et al"
+                                              },
+                                              "country": {
+                                                "confidence": {
+                                                  "Colombia": 1.0
+                                                },
+                                                "entropy": -1.000088900581841e-12,
+                                                "value": "Colombia"
+                                              },
+                                              "div": 0.004741185441552972,
+                                              "num_date": {
+                                                "confidence": [
+                                                  2015.931985484929,
+                                                  2015.9986301369863
+                                                ],
+                                                "value": 2015.9986301369863
+                                              },
+                                              "region": {
+                                                "confidence": {
+                                                  "South America": 1.0
+                                                },
+                                                "entropy": -1.000088900581841e-12,
+                                                "value": "South America"
+                                              },
+                                              "url": "https://www.ncbi.nlm.nih.gov/nuccore/MF574562"
+                                            }
+                                          }
+                                        ],
+                                        "name": "NODE_0000017",
+                                        "node_attrs": {
+                                          "country": {
+                                            "confidence": {
+                                              "Colombia": 0.9921064243353195,
+                                              "Panama": 0.0015977984364904843,
+                                              "Venezuela": 0.004375910127445269
+                                            },
+                                            "entropy": 0.058362253091816696,
+                                            "value": "Colombia"
+                                          },
+                                          "div": 0.004369447258243613,
+                                          "num_date": {
+                                            "confidence": [
+                                              2015.7264396453256,
+                                              2015.907419836377
+                                            ],
+                                            "value": 2015.8339892465374
+                                          },
+                                          "region": {
+                                            "confidence": {
+                                              "South America": 0.9993540369905746
+                                            },
+                                            "entropy": 0.005564359572786019,
+                                            "value": "South America"
+                                          }
+                                        }
+                                      }
+                                    ],
+                                    "name": "NODE_0000016",
+                                    "node_attrs": {
+                                      "country": {
+                                        "confidence": {
+                                          "Brazil": 0.01271450170629247,
+                                          "Colombia": 0.786247100011118,
+                                          "Panama": 0.045972289706987,
+                                          "Venezuela": 0.13502035274424562
+                                        },
+                                        "entropy": 0.7829407633878449,
+                                        "value": "Colombia"
+                                      },
+                                      "div": 0.004276554757752049,
+                                      "num_date": {
+                                        "confidence": [
+                                          2015.6385527481946,
+                                          2015.8662460521025
+                                        ],
+                                        "value": 2015.7982198291481
+                                      },
+                                      "region": {
+                                        "confidence": {
+                                          "North America": 0.004579304049621304,
+                                          "South America": 0.9953415961665919
+                                        },
+                                        "entropy": 0.030104831122811794,
+                                        "value": "South America"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "name": "NODE_0000015",
+                                "node_attrs": {
+                                  "country": {
+                                    "confidence": {
+                                      "Brazil": 0.04055116499861361,
+                                      "Colombia": 0.7303789969732967,
+                                      "Panama": 0.15696948538119962,
+                                      "Venezuela": 0.046342401352496336
+                                    },
+                                    "entropy": 0.9483878748554081,
+                                    "value": "Colombia"
+                                  },
+                                  "div": 0.003718955523655047,
+                                  "num_date": {
+                                    "confidence": [
+                                      2015.3246118561988,
+                                      2015.6366074480263
+                                    ],
+                                    "value": 2015.5195078920879
+                                  },
+                                  "region": {
+                                    "confidence": {
+                                      "North America": 0.06724932960973504,
+                                      "South America": 0.9322842464133868
+                                    },
+                                    "entropy": 0.2507598219598684,
+                                    "value": "South America"
+                                  }
+                                }
+                              }
+                            ],
+                            "name": "NODE_0000014",
+                            "node_attrs": {
+                              "country": {
+                                "confidence": {
+                                  "Brazil": 0.12380241823311124,
+                                  "Colombia": 0.7910599668613577,
+                                  "Panama": 0.04654237587109125,
+                                  "Venezuela": 0.015022350128340297
+                                },
+                                "entropy": 0.7944871586108635,
+                                "value": "Colombia"
+                              },
+                              "div": 0.0035331815866123427,
+                              "num_date": {
+                                "confidence": [
+                                  2015.2199810750997,
+                                  2015.5951547519867
+                                ],
+                                "value": 2015.3710540208347
+                              },
+                              "region": {
+                                "confidence": {
+                                  "North America": 0.0044616204061414975,
+                                  "South America": 0.9954611368408275
+                                },
+                                "entropy": 0.02945139107895377,
+                                "value": "South America"
+                              }
+                            }
+                          }
+                        ],
+                        "name": "NODE_0000011",
+                        "node_attrs": {
+                          "country": {
+                            "confidence": {
+                              "Brazil": 0.9957128230773521,
+                              "Colombia": 0.0024172737858564907
+                            },
+                            "entropy": 0.03433319513932252,
+                            "value": "Brazil"
+                          },
+                          "div": 0.0025104350712454693,
+                          "num_date": {
+                            "confidence": [
+                              2014.7912732695374,
+                              2015.1052710489414
+                            ],
+                            "value": 2014.915297318947
+                          },
+                          "region": {
+                            "confidence": {
+                              "South America": 0.9996617297009357
+                            },
+                            "entropy": 0.0030798597433229777,
+                            "value": "South America"
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {
+                          "labels": {
+                            "aa": "NS1: M349V"
+                          },
+                          "mutations": {
+                            "NS1": [
+                              "M349V"
+                            ],
+                            "nuc": [
+                              "A3517G",
+                              "G6966A"
+                            ]
+                          }
+                        },
+                        "children": [
+                          {
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "T1275C",
+                                  "T1858C",
+                                  "T2409C",
+                                  "A2754G",
+                                  "A3780G",
+                                  "G4971T",
+                                  "C5532T",
+                                  "G5751A",
+                                  "G6453C",
+                                  "A6873G",
+                                  "C8232A",
+                                  "T8553C",
+                                  "C8850T",
+                                  "A9420G",
+                                  "G9933T",
+                                  "C10098T",
+                                  "A10347G",
+                                  "T10372C"
+                                ]
+                              }
+                            },
+                            "name": "EcEs062_16",
+                            "node_attrs": {
+                              "accession": "KX879603",
+                              "author": {
+                                "author": "Marquez et al",
+                                "journal": "Genome Announc 5 (8), e01673-16 (2017)",
+                                "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/28232448",
+                                "title": "First Complete Genome Sequences of Zika Virus Isolated from Febrile Patient Sera in Ecuador",
+                                "value": "Marquez et al"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "Ecuador": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "Ecuador"
+                              },
+                              "div": 0.004185234186123468,
+                              "num_date": {
+                                "confidence": [
+                                  2016.25,
+                                  2016.3212126047338
+                                ],
+                                "value": 2016.25
+                              },
+                              "region": {
+                                "confidence": {
+                                  "South America": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "South America"
+                              },
+                              "url": "https://www.ncbi.nlm.nih.gov/nuccore/KX879603"
+                            }
+                          },
+                          {
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "T2358C",
+                                  "C2700T",
+                                  "T8028C",
+                                  "C9270T"
+                                ]
+                              }
+                            },
+                            "children": [
+                              {
+                                "branch_attrs": {
+                                  "labels": {
+                                    "aa": "2K: M7I"
+                                  },
+                                  "mutations": {
+                                    "2K": [
+                                      "M7I"
+                                    ],
+                                    "nuc": [
+                                      "G6849A",
+                                      "A8169G",
+                                      "G8520A"
+                                    ]
+                                  }
+                                },
+                                "name": "Brazil/2015/ZBRA105",
+                                "node_attrs": {
+                                  "accession": "KY558989",
+                                  "author": {
+                                    "author": "Faria et al",
+                                    "journal": "Nature 546 (7658), 406-410 (2017)",
+                                    "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/28538727",
+                                    "title": "Establishment and cryptic transmission of Zika virus in Brazil and the Americas",
+                                    "value": "Faria et al"
+                                  },
+                                  "country": {
+                                    "confidence": {
+                                      "Brazil": 1.0
+                                    },
+                                    "entropy": -1.000088900581841e-12,
+                                    "value": "Brazil"
+                                  },
+                                  "div": 0.0031615255432013464,
+                                  "num_date": {
+                                    "confidence": [
+                                      2015.1465753424657,
+                                      2015.1465753424657
+                                    ],
+                                    "value": 2015.1465753424657
+                                  },
+                                  "region": {
+                                    "confidence": {
+                                      "South America": 1.0
+                                    },
+                                    "entropy": -1.000088900581841e-12,
+                                    "value": "South America"
+                                  },
+                                  "url": "https://www.ncbi.nlm.nih.gov/nuccore/KY558989"
+                                }
+                              },
+                              {
+                                "branch_attrs": {
+                                  "labels": {
+                                    "aa": "NS5: I322V, D878E"
+                                  },
+                                  "mutations": {
+                                    "NS5": [
+                                      "I322V",
+                                      "D878E"
+                                    ],
+                                    "nuc": [
+                                      "T489C",
+                                      "T2043C",
+                                      "T2418C",
+                                      "C2844T",
+                                      "C5352T",
+                                      "T5823C",
+                                      "C6261T",
+                                      "T6891C",
+                                      "G8604A",
+                                      "A8614G",
+                                      "G9294A",
+                                      "T10284G"
+                                    ]
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "branch_attrs": {
+                                      "labels": {
+                                        "aa": "NS3: V126I"
+                                      },
+                                      "mutations": {
+                                        "NS3": [
+                                          "V126I"
+                                        ],
+                                        "nuc": [
+                                          "T510C",
+                                          "G630A",
+                                          "G3474A",
+                                          "G4972A",
+                                          "T5250C",
+                                          "C6934T",
+                                          "A7038C",
+                                          "T8025C",
+                                          "C8316A",
+                                          "C8370T",
+                                          "T10372C"
+                                        ]
+                                      }
+                                    },
+                                    "name": "DOM/2016/BB_0433",
+                                    "node_attrs": {
+                                      "accession": "KY785441",
+                                      "author": {
+                                        "author": "Metsky et al",
+                                        "journal": "Nature 546 (7658), 411-415 (2017)",
+                                        "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/28538734",
+                                        "title": "Zika virus evolution and spread in the Americas",
+                                        "value": "Metsky et al"
+                                      },
+                                      "country": {
+                                        "confidence": {
+                                          "Dominican Republic": 1.0
+                                        },
+                                        "entropy": -1.000088900581841e-12,
+                                        "value": "Dominican Republic"
+                                      },
+                                      "div": 0.005021181000590085,
+                                      "num_date": {
+                                        "confidence": [
+                                          2016.4494535519125,
+                                          2016.4494535519125
+                                        ],
+                                        "value": 2016.4494535519125
+                                      },
+                                      "region": {
+                                        "confidence": {
+                                          "North America": 1.0
+                                        },
+                                        "entropy": -1.000088900581841e-12,
+                                        "value": "North America"
+                                      },
+                                      "url": "https://www.ncbi.nlm.nih.gov/nuccore/KY785441"
+                                    }
+                                  },
+                                  {
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "C5232T"
+                                        ]
+                                      }
+                                    },
+                                    "children": [
+                                      {
+                                        "branch_attrs": {
+                                          "labels": {
+                                            "aa": "NS1: D208G; NS2A: L152M; NS5: Q650R"
+                                          },
+                                          "mutations": {
+                                            "NS1": [
+                                              "D208G"
+                                            ],
+                                            "NS2A": [
+                                              "L152M"
+                                            ],
+                                            "NS5": [
+                                              "Q650R"
+                                            ],
+                                            "nuc": [
+                                              "T2724C",
+                                              "T2823C",
+                                              "A3095G",
+                                              "T3982A",
+                                              "C6105T",
+                                              "A9599G",
+                                              "T10632C"
+                                            ]
+                                          }
+                                        },
+                                        "name": "DOM/2016/BB_0183",
+                                        "node_attrs": {
+                                          "accession": "KY785420",
+                                          "author": {
+                                            "author": "Metsky et al",
+                                            "journal": "Nature 546 (7658), 411-415 (2017)",
+                                            "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/28538734",
+                                            "title": "Zika virus evolution and spread in the Americas",
+                                            "value": "Metsky et al"
+                                          },
+                                          "country": {
+                                            "confidence": {
+                                              "Dominican Republic": 0.9999999999999999
+                                            },
+                                            "entropy": -9.99866855976916e-13,
+                                            "value": "Dominican Republic"
+                                          },
+                                          "div": 0.004741401721726988,
+                                          "num_date": {
+                                            "confidence": [
+                                              2016.2964480874316,
+                                              2016.2964480874316
+                                            ],
+                                            "value": 2016.2964480874316
+                                          },
+                                          "region": {
+                                            "confidence": {
+                                              "North America": 1.0
+                                            },
+                                            "entropy": -1.000088900581841e-12,
+                                            "value": "North America"
+                                          },
+                                          "url": "https://www.ncbi.nlm.nih.gov/nuccore/KY785420"
+                                        }
+                                      },
+                                      {
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "C1137T",
+                                              "C1665T",
+                                              "A3987G",
+                                              "T8862C",
+                                              "A9387G",
+                                              "A10270C",
+                                              "A10616G"
+                                            ]
+                                          }
+                                        },
+                                        "name": "DOM/2016/MA_WGS16_011",
+                                        "node_attrs": {
+                                          "accession": "KY785484",
+                                          "author": {
+                                            "author": "Metsky et al",
+                                            "journal": "Nature 546 (7658), 411-415 (2017)",
+                                            "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/28538734",
+                                            "title": "Zika virus evolution and spread in the Americas",
+                                            "value": "Metsky et al"
+                                          },
+                                          "country": {
+                                            "confidence": {
+                                              "Dominican Republic": 0.9999999999999999
+                                            },
+                                            "entropy": -9.99866855976916e-13,
+                                            "value": "Dominican Republic"
+                                          },
+                                          "div": 0.004742223426012165,
+                                          "num_date": {
+                                            "confidence": [
+                                              2016.4303278688524,
+                                              2016.4303278688524
+                                            ],
+                                            "value": 2016.4303278688524
+                                          },
+                                          "region": {
+                                            "confidence": {
+                                              "North America": 1.0
+                                            },
+                                            "entropy": -1.000088900581841e-12,
+                                            "value": "North America"
+                                          },
+                                          "url": "https://www.ncbi.nlm.nih.gov/nuccore/KY785484"
+                                        }
+                                      },
+                                      {
+                                        "branch_attrs": {
+                                          "labels": {
+                                            "aa": "NS5: T808I"
+                                          },
+                                          "mutations": {
+                                            "NS5": [
+                                              "T808I"
+                                            ],
+                                            "nuc": [
+                                              "C10073T"
+                                            ]
+                                          }
+                                        },
+                                        "children": [
+                                          {
+                                            "branch_attrs": {
+                                              "mutations": {
+                                                "nuc": [
+                                                  "T1554C",
+                                                  "T2443C",
+                                                  "T2961C",
+                                                  "G4149A",
+                                                  "T5181C",
+                                                  "A7584G",
+                                                  "C7989T",
+                                                  "A8241G",
+                                                  "C8589T",
+                                                  "T8835C",
+                                                  "C9378T"
+                                                ]
+                                              }
+                                            },
+                                            "children": [
+                                              {
+                                                "branch_attrs": {
+                                                  "labels": {
+                                                    "aa": "NS1: P112S"
+                                                  },
+                                                  "mutations": {
+                                                    "NS1": [
+                                                      "P112S"
+                                                    ],
+                                                    "nuc": [
+                                                      "C2806T",
+                                                      "C7776T",
+                                                      "C8233T",
+                                                      "T10373C"
+                                                    ]
+                                                  }
+                                                },
+                                                "name": "USA/2016/FLUR022",
+                                                "node_attrs": {
+                                                  "accession": "KY325473",
+                                                  "author": {
+                                                    "author": "Grubaugh et al",
+                                                    "journal": "Nature (2017) In press",
+                                                    "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/28538723",
+                                                    "title": "Genomic epidemiology reveals multiple introductions of Zika virus into the United States",
+                                                    "value": "Grubaugh et al"
+                                                  },
+                                                  "country": {
+                                                    "confidence": {
+                                                      "USA": 1.0
+                                                    },
+                                                    "entropy": -1.000088900581841e-12,
+                                                    "value": "USA"
+                                                  },
+                                                  "div": 0.005577904384483849,
+                                                  "num_date": {
+                                                    "confidence": [
+                                                      2016.6653005464482,
+                                                      2016.6653005464482
+                                                    ],
+                                                    "value": 2016.6653005464482
+                                                  },
+                                                  "region": {
+                                                    "confidence": {
+                                                      "North America": 1.0
+                                                    },
+                                                    "entropy": -1.000088900581841e-12,
+                                                    "value": "North America"
+                                                  },
+                                                  "url": "https://www.ncbi.nlm.nih.gov/nuccore/KY325473"
+                                                }
+                                              },
+                                              {
+                                                "branch_attrs": {
+                                                  "labels": {
+                                                    "aa": "ENV: A69V"
+                                                  },
+                                                  "mutations": {
+                                                    "ENV": [
+                                                      "A69V"
+                                                    ],
+                                                    "nuc": [
+                                                      "G459A",
+                                                      "C1166T",
+                                                      "T3982C"
+                                                    ]
+                                                  }
+                                                },
+                                                "name": "Aedes_aegypti/USA/2016/FL05",
+                                                "node_attrs": {
+                                                  "accession": "KY075937",
+                                                  "author": {
+                                                    "author": "Grubaugh et al",
+                                                    "journal": "Nature (2017) In press",
+                                                    "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/28538723",
+                                                    "title": "Genomic epidemiology reveals multiple introductions of Zika virus into the United States",
+                                                    "value": "Grubaugh et al"
+                                                  },
+                                                  "country": {
+                                                    "confidence": {
+                                                      "USA": 1.0
+                                                    },
+                                                    "entropy": -1.000088900581841e-12,
+                                                    "value": "USA"
+                                                  },
+                                                  "div": 0.005485023547164092,
+                                                  "num_date": {
+                                                    "confidence": [
+                                                      2016.6898907103825,
+                                                      2016.6898907103825
+                                                    ],
+                                                    "value": 2016.6898907103825
+                                                  },
+                                                  "region": {
+                                                    "confidence": {
+                                                      "North America": 1.0
+                                                    },
+                                                    "entropy": -1.000088900581841e-12,
+                                                    "value": "North America"
+                                                  },
+                                                  "url": "https://www.ncbi.nlm.nih.gov/nuccore/KY075937"
+                                                }
+                                              }
+                                            ],
+                                            "name": "NODE_0000029",
+                                            "node_attrs": {
+                                              "country": {
+                                                "confidence": {
+                                                  "Dominican Republic": 0.02222029850260641,
+                                                  "USA": 0.9758609452653225
+                                                },
+                                                "entropy": 0.12534117522067229,
+                                                "value": "USA"
+                                              },
+                                              "div": 0.005206239371366467,
+                                              "num_date": {
+                                                "confidence": [
+                                                  2016.2385862339004,
+                                                  2016.5668011243254
+                                                ],
+                                                "value": 2016.4949858106024
+                                              },
+                                              "region": {
+                                                "confidence": {
+                                                  "North America": 0.9994828124294423
+                                                },
+                                                "entropy": 0.0045902888203223115,
+                                                "value": "North America"
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "branch_attrs": {
+                                              "mutations": {
+                                                "nuc": [
+                                                  "T531C",
+                                                  "T1524G",
+                                                  "C2238T"
+                                                ]
+                                              }
+                                            },
+                                            "children": [
+                                              {
+                                                "branch_attrs": {
+                                                  "labels": {
+                                                    "aa": "NS3: Y498C"
+                                                  },
+                                                  "mutations": {
+                                                    "NS3": [
+                                                      "Y498C"
+                                                    ],
+                                                    "nuc": [
+                                                      "C4020T",
+                                                      "C4749T",
+                                                      "A6089G"
+                                                    ]
+                                                  }
+                                                },
+                                                "name": "DOM/2016/BB_0059",
+                                                "node_attrs": {
+                                                  "accession": "KY785425",
+                                                  "author": {
+                                                    "author": "Metsky et al",
+                                                    "journal": "Nature 546 (7658), 411-415 (2017)",
+                                                    "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/28538734",
+                                                    "title": "Zika virus evolution and spread in the Americas",
+                                                    "value": "Metsky et al"
+                                                  },
+                                                  "country": {
+                                                    "confidence": {
+                                                      "Dominican Republic": 1.0
+                                                    },
+                                                    "entropy": -1.000088900581841e-12,
+                                                    "value": "Dominican Republic"
+                                                  },
+                                                  "div": 0.004742227702811522,
+                                                  "num_date": {
+                                                    "confidence": [
+                                                      2016.2581967213114,
+                                                      2016.2581967213114
+                                                    ],
+                                                    "value": 2016.2581967213114
+                                                  },
+                                                  "region": {
+                                                    "confidence": {
+                                                      "North America": 1.0
+                                                    },
+                                                    "entropy": -1.000088900581841e-12,
+                                                    "value": "North America"
+                                                  },
+                                                  "url": "https://www.ncbi.nlm.nih.gov/nuccore/KY785425"
+                                                }
+                                              },
+                                              {
+                                                "branch_attrs": {
+                                                  "mutations": {
+                                                    "nuc": [
+                                                      "C918T",
+                                                      "T1047C",
+                                                      "G6882A",
+                                                      "T10320C"
+                                                    ]
+                                                  }
+                                                },
+                                                "children": [
+                                                  {
+                                                    "branch_attrs": {
+                                                      "labels": {
+                                                        "aa": "NS3: S506P; PRO: R89Q"
+                                                      },
+                                                      "mutations": {
+                                                        "NS3": [
+                                                          "S506P"
+                                                        ],
+                                                        "PRO": [
+                                                          "R89Q"
+                                                        ],
+                                                        "nuc": [
+                                                          "G722A",
+                                                          "T1224C",
+                                                          "A3639G",
+                                                          "T4734C",
+                                                          "T6112C",
+                                                          "G8082A",
+                                                          "C8544T"
+                                                        ]
+                                                      }
+                                                    },
+                                                    "name": "USA/2016/FL022",
+                                                    "node_attrs": {
+                                                      "accession": "KY075935",
+                                                      "author": {
+                                                        "author": "Grubaugh et al",
+                                                        "journal": "Nature (2017) In press",
+                                                        "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/28538723",
+                                                        "title": "Genomic epidemiology reveals multiple introductions of Zika virus into the United States",
+                                                        "value": "Grubaugh et al"
+                                                      },
+                                                      "country": {
+                                                        "confidence": {
+                                                          "USA": 1.0
+                                                        },
+                                                        "entropy": -1.000088900581841e-12,
+                                                        "value": "USA"
+                                                      },
+                                                      "div": 0.0054850189157926756,
+                                                      "num_date": {
+                                                        "confidence": [
+                                                          2016.5560109289618,
+                                                          2016.5560109289618
+                                                        ],
+                                                        "value": 2016.5560109289618
+                                                      },
+                                                      "region": {
+                                                        "confidence": {
+                                                          "North America": 0.9999999999999999
+                                                        },
+                                                        "entropy": -9.99866855976916e-13,
+                                                        "value": "North America"
+                                                      },
+                                                      "url": "https://www.ncbi.nlm.nih.gov/nuccore/KY075935"
+                                                    }
+                                                  },
+                                                  {
+                                                    "branch_attrs": {
+                                                      "mutations": {
+                                                        "nuc": [
+                                                          "G2481A",
+                                                          "T10373C"
+                                                        ]
+                                                      }
+                                                    },
+                                                    "name": "USA/2016/FLWB042",
+                                                    "node_attrs": {
+                                                      "accession": "KY325478",
+                                                      "author": {
+                                                        "author": "Grubaugh et al",
+                                                        "journal": "Nature (2017) In press",
+                                                        "paper_url": "https://www.ncbi.nlm.nih.gov/pubmed/28538723",
+                                                        "title": "Genomic epidemiology reveals multiple introductions of Zika virus into the United States",
+                                                        "value": "Grubaugh et al"
+                                                      },
+                                                      "country": {
+                                                        "confidence": {
+                                                          "USA": 1.0
+                                                        },
+                                                        "entropy": -1.000088900581841e-12,
+                                                        "value": "USA"
+                                                      },
+                                                      "div": 0.005021854615563159,
+                                                      "num_date": {
+                                                        "confidence": [
+                                                          2016.7363387978141,
+                                                          2016.7363387978141
+                                                        ],
+                                                        "value": 2016.7363387978141
+                                                      },
+                                                      "region": {
+                                                        "confidence": {
+                                                          "North America": 0.9999999999999999
+                                                        },
+                                                        "entropy": -9.99866855976916e-13,
+                                                        "value": "North America"
+                                                      },
+                                                      "url": "https://www.ncbi.nlm.nih.gov/nuccore/KY325478"
+                                                    }
+                                                  }
+                                                ],
+                                                "name": "NODE_0000031",
+                                                "node_attrs": {
+                                                  "country": {
+                                                    "confidence": {
+                                                      "Dominican Republic": 0.022224968287637425,
+                                                      "USA": 0.9758562825209154
+                                                    },
+                                                    "entropy": 0.1253588601720473,
+                                                    "value": "USA"
+                                                  },
+                                                  "div": 0.0048340173864312086,
+                                                  "num_date": {
+                                                    "confidence": [
+                                                      2016.123408886314,
+                                                      2016.3769564372233
+                                                    ],
+                                                    "value": 2016.2675632676533
+                                                  },
+                                                  "region": {
+                                                    "confidence": {
+                                                      "North America": 0.9994865138901972
+                                                    },
+                                                    "entropy": 0.004561893131669992,
+                                                    "value": "North America"
+                                                  }
+                                                }
+                                              }
+                                            ],
+                                            "name": "NODE_0000030",
+                                            "node_attrs": {
+                                              "country": {
+                                                "confidence": {
+                                                  "Dominican Republic": 0.5221459907581797,
+                                                  "USA": 0.47337671988656743
+                                                },
+                                                "entropy": 0.7289171138076976,
+                                                "value": "Dominican Republic"
+                                              },
+                                              "div": 0.004462331850532727,
+                                              "num_date": {
+                                                "confidence": [
+                                                  2015.8978493011869,
+                                                  2016.1331034745094
+                                                ],
+                                                "value": 2016.0183196512137
+                                              },
+                                              "region": {
+                                                "confidence": {
+                                                  "North America": 0.9994419671342492
+                                                },
+                                                "entropy": 0.00490513136616941,
+                                                "value": "North America"
+                                              }
+                                            }
+                                          }
+                                        ],
+                                        "name": "NODE_0000028",
+                                        "node_attrs": {
+                                          "country": {
+                                            "confidence": {
+                                              "Dominican Republic": 0.5220350640115481,
+                                              "USA": 0.47347504999226286
+                                            },
+                                            "entropy": 0.7290124813112243,
+                                            "value": "Dominican Republic"
+                                          },
+                                          "div": 0.004183586195804173,
+                                          "num_date": {
+                                            "confidence": [
+                                              2015.7158236488115,
+                                              2015.9749321951258
+                                            ],
+                                            "value": 2015.8650132023124
+                                          },
+                                          "region": {
+                                            "confidence": {
+                                              "North America": 0.9993934654774448
+                                            },
+                                            "entropy": 0.005270775489363774,
+                                            "value": "North America"
+                                          }
+                                        }
+                                      }
+                                    ],
+                                    "name": "NODE_0000026",
+                                    "node_attrs": {
+                                      "country": {
+                                        "confidence": {
+                                          "Dominican Republic": 0.9976846279380908,
+                                          "USA": 0.0019680425443594483
+                                        },
+                                        "entropy": 0.017825722778094282,
+                                        "value": "Dominican Republic"
+                                      },
+                                      "div": 0.004090693578402744,
+                                      "num_date": {
+                                        "confidence": [
+                                          2015.6375007922688,
+                                          2015.9173795685722
+                                        ],
+                                        "value": 2015.796697464692
+                                      },
+                                      "region": {
+                                        "confidence": {
+                                          "North America": 0.9994055897358085
+                                        },
+                                        "entropy": 0.005027297350978265,
+                                        "value": "North America"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "name": "NODE_0000025",
+                                "node_attrs": {
+                                  "country": {
+                                    "confidence": {
+                                      "Brazil": 0.02677108603590918,
+                                      "Dominican Republic": 0.9659853767086175,
+                                      "USA": 0.0019504611397215873
+                                    },
+                                    "entropy": 0.18318835527933597,
+                                    "value": "Dominican Republic"
+                                  },
+                                  "div": 0.00399780001808974,
+                                  "num_date": {
+                                    "confidence": [
+                                      2015.5256679725771,
+                                      2015.8521037323148
+                                    ],
+                                    "value": 2015.7377307936192
+                                  },
+                                  "region": {
+                                    "confidence": {
+                                      "North America": 0.9284776988135538,
+                                      "South America": 0.07107132985424003
+                                    },
+                                    "entropy": 0.26059042525736836,
+                                    "value": "North America"
+                                  }
+                                }
+                              }
+                            ],
+                            "name": "NODE_0000024",
+                            "node_attrs": {
+                              "country": {
+                                "confidence": {
+                                  "Brazil": 0.8751257825593324,
+                                  "Dominican Republic": 0.084869991170871,
+                                  "Ecuador": 0.01845860268442228,
+                                  "French Polynesia": 0.004624206953354069
+                                },
+                                "entropy": 0.5333751061239964,
+                                "value": "Brazil"
+                              },
+                              "div": 0.002882070449600498,
+                              "num_date": {
+                                "confidence": [
+                                  2014.8989908159658,
+                                  2015.1068463229842
+                                ],
+                                "value": 2015.0145111873017
+                              },
+                              "region": {
+                                "confidence": {
+                                  "North America": 0.07866954840429104,
+                                  "South America": 0.9207981711627207
+                                },
+                                "entropy": 0.28031246941299653,
+                                "value": "South America"
+                              }
+                            }
+                          }
+                        ],
+                        "name": "NODE_0000023",
+                        "node_attrs": {
+                          "country": {
+                            "confidence": {
+                              "Brazil": 0.8725259250352798,
+                              "Dominican Republic": 0.029875009650531314,
+                              "Ecuador": 0.06241459605561622,
+                              "French Polynesia": 0.012222455984752705
+                            },
+                            "entropy": 0.5904053426803887,
+                            "value": "Brazil"
+                          },
+                          "div": 0.002510435132092245,
+                          "num_date": {
+                            "confidence": [
+                              2014.6882036104676,
+                              2014.996983660515
+                            ],
+                            "value": 2014.84418520841
+                          },
+                          "region": {
+                            "confidence": {
+                              "North America": 0.026955482825055603,
+                              "South America": 0.9724117787743143
+                            },
+                            "entropy": 0.1294488221063563,
+                            "value": "South America"
+                          }
+                        }
+                      }
+                    ],
+                    "name": "NODE_0000010",
+                    "node_attrs": {
+                      "country": {
+                        "confidence": {
+                          "Brazil": 0.9489638264203666,
+                          "Ecuador": 0.006400047233872121,
+                          "French Polynesia": 0.027077743290729806,
+                          "Puerto Rico": 0.008030603684424906
+                        },
+                        "entropy": 0.28248612294333647,
+                        "value": "Brazil"
+                      },
+                      "div": 0.0023246473939989997,
+                      "num_date": {
+                        "confidence": [
+                          2014.5469231055365,
+                          2014.9505349440883
+                        ],
+                        "value": 2014.669637678406
+                      },
+                      "region": {
+                        "confidence": {
+                          "North America": 0.03860965756723194,
+                          "Oceania": 0.005785980881667862,
+                          "South America": 0.9555269713579786
+                        },
+                        "entropy": 0.199658531828864,
+                        "value": "South America"
+                      }
+                    }
+                  }
+                ],
+                "name": "NODE_0000001",
+                "node_attrs": {
+                  "country": {
+                    "confidence": {
+                      "Brazil": 0.001986043640116788,
+                      "French Polynesia": 0.9975213460928256
+                    },
+                    "entropy": 0.01969540370283616,
+                    "value": "French Polynesia"
+                  },
+                  "div": 0.0016741309673207923,
+                  "num_date": {
+                    "confidence": [
+                      2013.7723728168019,
+                      2013.8901359243184
+                    ],
+                    "value": 2013.8280346994088
+                  },
+                  "region": {
+                    "confidence": {
+                      "Oceania": 0.9988973999213938,
+                      "South America": 0.0010116646327507878
+                    },
+                    "entropy": 0.008986188679117072,
+                    "value": "Oceania"
+                  }
+                }
+              }
+            ],
+            "name": "NODE_0000002",
+            "node_attrs": {
+              "country": {
+                "confidence": {
+                  "American Samoa": 0.006439172719424114,
+                  "Brazil": 0.0015317377695994092,
+                  "French Polynesia": 0.9854081162091279,
+                  "Singapore": 0.0014839239720008484
+                },
+                "entropy": 0.10567664497874087,
+                "value": "French Polynesia"
+              },
+              "div": 0.001581245258906858,
+              "num_date": {
+                "confidence": [
+                  2013.654570236259,
+                  2013.8615508070861
+                ],
+                "value": 2013.8245708875595
+              },
+              "region": {
+                "confidence": {
+                  "Oceania": 0.9990669978597241
+                },
+                "entropy": 0.00812410377622934,
+                "value": "Oceania"
+              }
+            }
+          }
+        ],
+        "name": "NODE_0000003",
+        "node_attrs": {
+          "country": {
+            "confidence": {
+              "American Samoa": 0.1930372257163265,
+              "French Polynesia": 0.6128055241036384,
+              "Singapore": 0.04603152855110318,
+              "Thailand": 0.03167265263971808
+            },
+            "entropy": 1.397125732113769,
+            "value": "French Polynesia"
+          },
+          "div": 0.0014883587845282106,
+          "num_date": {
+            "confidence": [
+              2013.491656006831,
+              2013.8452869362316
+            ],
+            "value": 2013.7172580055033
+          },
+          "region": {
+            "confidence": {
+              "North America": 0.0013837735734781467,
+              "Oceania": 0.9769828529172311,
+              "South America": 0.0018267592554332952,
+              "Southeast Asia": 0.0198066142538577
+            },
+            "entropy": 0.12105397866879174,
+            "value": "Oceania"
+          }
+        }
+      }
+    ],
+    "name": "NODE_0000000",
+    "node_attrs": {
+      "country": {
+        "confidence": {
+          "American Samoa": 0.12911148996047772,
+          "French Polynesia": 0.3583591638257108,
+          "Singapore": 0.1523179332752024,
+          "Thailand": 0.1019414129684692
+        },
+        "entropy": 2.119159268798784,
+        "value": "French Polynesia"
+      },
+      "div": 0,
+      "num_date": {
+        "confidence": [
+          2011.0300302924868,
+          2013.1193664551356
+        ],
+        "value": 2012.4299505152553
+      },
+      "region": {
+        "confidence": {
+          "North America": 0.02013092962415262,
+          "Oceania": 0.6406423436575471,
+          "South America": 0.019286394068274672,
+          "Southeast Asia": 0.3199403326500257
+        },
+        "entropy": 0.8046492356165452,
+        "value": "Oceania"
+      }
+    }
+  },
+  "version": "v2"
+}

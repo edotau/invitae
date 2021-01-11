@@ -25,36 +25,48 @@ conda activate nextstrain"
 else
 	echo "installing conda nextstrain env..."
 	# Setup your Nextstrain environment
-	echo "curl http://data.nextstrain.org/nextstrain.yml --compressed -o $YML"
+	echo "
+	curl http://data.nextstrain.org/nextstrain.yml --compressed -o $YML"
 	curl http://data.nextstrain.org/nextstrain.yml --compressed -o $YML
 
-	echo "conda env create -f $YML"
+	echo "
+	conda env create -f $YML"
 	conda env create -f $YML
 
-	echo "conda activate nextstrain"
+	echo "
+	conda activate nextstrain"
 	conda activate nextstrain
 
-	echo "npm install --global auspice"
+	echo "
+	npm install --global auspice"
 	npm install --global auspice
 fi
 # Determines number of cores your machine has
 CORES=$(sysctl -n hw.ncpu)
-
 # Run a basic analysis with example data
 if ! [ -d "ncov" ]; then # check if the directory is there
 	echo "git clone https://github.com/nextstrain/ncov.git"
 	git clone https://github.com/nextstrain/ncov.git
+	cd ncov
+
+	# Runs analysis pipeline on interesting dataset:
+	echo "
+	gzip -d -c data/example_sequences.fasta.gz > data/example_sequences.fasta"
+	gzip -d -c data/example_sequences.fasta.gz > data/example_sequences.fasta
+
+	echo "
+	snakemake --cores $CORES --profile ./my_profiles/getting_started"
+	snakemake --cores $CORES --profile ./my_profiles/getting_started
+
+	echo "
+	snakemake --cores $CORES --profile ./my_profiles/getting_started"
+	snakemake --cores $CORES --profile ./my_profiles/getting_started
 fi
+
 cd ncov
-# Runs analysis pipeline on interesting dataset:
 echo "
-gzip -d -c data/example_sequences.fasta.gz > data/example_sequences.fasta"
-gzip -d -c data/example_sequences.fasta.gz > data/example_sequences.fasta
+auspice view & open http://localhost:4000"
+auspice view & sleep 5s; open "http://localhost:4000"
 
-echo "
-snakemake --cores $CORES --profile ./my_profiles/getting_started"
-snakemake --cores $CORES --profile ./my_profiles/getting_started
-
-echo "
-auspice view & open \"http://localhost:4000\""
-auspice view & open "http://localhost:4000"
+echo "When finished with broswer run:
+kill \$(lsof -t -i :4000)"
