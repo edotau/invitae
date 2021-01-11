@@ -14,7 +14,15 @@ Usage:
 fi
 
 PREFIX=$(basename $READ1  | rev | cut -d '.' -f 3- | rev | cut -d '_' -f 1)
-CORES=$(sysctl -n hw.ncpu)
+
+# Determines number of cores your machine has
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+	export CORES=$SLURM_CPUS_ON_NODE
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+	export CORES=$(sysctl -n hw.ncpu)
+else
+	echo "Error: Error: apologies, I only support MacOS and Linux operation systems for the time being..."
+fi
 
 # Assemble initial contigs with SPAdes 3.14.1
 export PATH=/Users/eric.au/bin/SPAdes-3.14.1-Darwin/bin:$PATH
