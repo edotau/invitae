@@ -42,7 +42,14 @@ else
 	npm install --global auspice
 fi
 # Determines number of cores your machine has
-CORES=$(sysctl -n hw.ncpu)
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+	set CORES=$SLURM_CPUS_ON_NODE
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+	set CORES=$(sysctl -n hw.ncpu)
+else
+
+fi
+
 # Run a basic analysis with example data
 if ! [ -d "ncov" ]; then # check if the directory is there
 	echo "git clone https://github.com/nextstrain/ncov.git"
