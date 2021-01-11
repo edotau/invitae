@@ -1,0 +1,2 @@
+NC_045512v2_RagTag	31170
+Number of Gaps: 9
