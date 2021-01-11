@@ -1,2 +1,3 @@
 # invitae
-Scripts to automate tasks for projects
+Scripts to automate sequencing data analysis for projects at invitae
+
