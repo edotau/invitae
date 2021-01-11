@@ -8,7 +8,8 @@ READ2=$2
 if [[ "$#" -lt 2 ]]
 then
 	echo "Usage:
-	./$(basename "$0") READ1.fastq.gz READ2.fastq.gz"
+	./$(basename "$0") READ1.fastq.gz READ2.fastq.gz
+"
 	exit 0
 	fi
 
