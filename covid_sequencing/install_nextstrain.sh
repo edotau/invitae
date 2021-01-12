@@ -10,7 +10,7 @@ if ! command -v conda &> /dev/null; then
 	elif [[ "$OSTYPE" == "darwin"* ]]; then
 		curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh --output miniconda_install_MACOS.sh; bash ./miniconda_install_MACOS.sh
 	else
-		echo "Error: Error: apologies, I only support MacOS and Linux operation systems for the time being..."
+		echo "Error: apologies, I only support MacOS and Linux operation systems for the time being..."
 		exit
 	fi
 fi
